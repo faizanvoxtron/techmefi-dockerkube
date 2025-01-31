@@ -1,0 +1,1633 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  padding-bottom: 0;
+  /* margin-bottom: 0; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e8363c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e8363c;
+}
+
+/* Main Content CSS Start Here */
+
+/* Header CSS Start */
+/* header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background: #ffffffeb;
+}
+
+header .navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  justify-content: flex-end;
+  flex-basis: auto;
+} */
+
+.nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-nav .nav-link:hover {
+  color: #e8363c;
+}
+
+header .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: 2px;
+  content: "";
+  border-right: 0.3em solid transparent;
+  /* border-bottom: 0.3em solid; */
+  border-left: 0.3em solid transparent;
+}
+
+header .dropdown.show .dropdown-toggle::after {
+  border-top: 0;
+  border-bottom: 0.3em solid;
+}
+/* Header CSS End */
+
+/* Global Buttons Start */
+.theme-btn-1 {
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background: #e8363c;
+  color: #fff !important;
+}
+
+.theme-btn-1 a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.theme-btn-1:hover {
+  background: darkred;
+}
+/* Global Buttons End */
+
+/* Banner Section CSS Start */
+.banner {
+  position: relative;
+  height: 100vh;
+  /* background: url("../images/banner.webp"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #000000e0; */
+  background: #000000d1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.banner .tag {
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner .banner-img img {
+  height: 85vh;
+  display: none;
+}
+
+.banner-img-right {
+  float: right;
+}
+
+.banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  padding-top: 250px;
+}
+
+.banner-content h1 {
+  font-size: 56px;
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.banner-content h1 span {
+  font-weight: 600;
+  color: #fff;
+}
+
+.banner-content p {
+  font-size: 32px;
+  color: #fff;
+  text-transform: capitalize;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 15px 0;
+}
+
+.banner-bottom {
+  position: relative;
+  padding-top: 100px;
+}
+
+.banner-bottom ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.banner-bottom ul li i {
+  color: #e8363c;
+  padding-right: 10px;
+}
+
+.banner-bottom ul li a {
+  color: #fff;
+}
+
+/* Banner Section CSS End */
+
+/* About Section CSS Start */
+.about {
+  padding: 100px 0;
+  position: relative;
+  background: #d8e1eb54;
+}
+
+.top-headings {
+  text-align: center;
+}
+
+.top-headings h2 {
+  font-size: 42px;
+}
+
+.top-headings p {
+  font-size: 16px;
+  color: #808080;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.top-headings-left {
+  text-align: left;
+}
+
+.top-headings-left h3 {
+  color: #e8363c;
+}
+
+.top-headings-left h2 {
+  font-size: 42px;
+  color: #fff;
+}
+
+.top-headings-left p {
+  font-size: 18px;
+  line-height: 2rem;
+  color: #808080;
+}
+
+.about .boxes-container {
+  margin-top: 70px;
+}
+
+.about .boxes-container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  height: 410px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00000017;
+}
+
+.about .boxes-container .icon-box {
+  background: #e8363c;
+  padding: 18px 26px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.about .boxes-container h3 {
+  font-size: 24px;
+  color: #e8363c;
+}
+
+.about .boxes-container p {
+  font-size: 16px;
+  color: #808080;
+}
+/* About Section CSS End */
+
+/* Services Section CSS Start */
+.services {
+  padding: 150px 0;
+  background: #181818;
+}
+
+.services .top-headings {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sub-title {
+  color: #e8363c;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.services .nav-pills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 0;
+}
+
+.services .tabs-container {
+  margin-top: 70px;
+}
+
+.services .tabs-container .row {
+  justify-content: center;
+  align-items: center;
+}
+
+.services .nav-pills .nav-link {
+  text-align: left;
+  background: white;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  height: 90px;
+  padding: 25px;
+}
+
+.services .nav-pills .nav-link i {
+  font-size: 30px;
+}
+
+.services .nav-pills .nav-link h5 {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.services .nav-pills .nav-link.active,
+.services .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #e8363c;
+  font-size: 16px;
+  border: 1px solid #e8363c;
+  width: 400px;
+  height: 100px;
+}
+
+.services .top-headings-inner {
+  position: relative;
+}
+
+.services .top-headings-inner .content-box {
+  position: absolute;
+  bottom: -70px;
+  right: 30px;
+  background: #fff;
+  padding: 45px 30px;
+  border-bottom: 10px solid #e8363c;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.services .top-headings-inner .content-box i {
+  font-size: 40px;
+}
+
+.services .top-headings-inner .content-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.services .top-headings-inner .content-box p {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+
+.services p {
+  font-size: 18px;
+  color: #808080;
+  width: 100%;
+  text-align: right;
+  margin-top: -70px;
+  line-height: 2rem;
+}
+
+.services a {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Services Section CSS End */
+
+/* Packages Section CSS Start */
+.packages {
+  padding: 120px 0;
+  background: #000;
+}
+
+.packages .top-headings h2 {
+  color: #fff;
+}
+
+.packages .top-headings p {
+  color: #dadde5;
+}
+
+.packages .nav-pills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.packages .nav-link {
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #fff;
+}
+
+.packages .nav-link.active {
+  background: #e8363c;
+  font-size: 16px;
+  border: 1px solid #e8363c;
+}
+
+.packages .tab-content {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.packages .tab-content .pkg-para {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.package-box {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  height: 100%;
+  background: transparent;
+  color: #fff;
+}
+
+.package-box .pck-head {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background: #e8363c;
+  border-radius: 5px;
+  flex-direction: row;
+}
+
+.package-box .pck-head h4 {
+  color: #fff;
+  font-weight: 700;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.package-box .pck-head .pck-price {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.package-box .pck-head .pck-price h5 {
+  text-align: center;
+  margin-bottom: 0;
+  color: #fff;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+h5 {
+  font-size: calc(12px + (16 - 12) * (100vw - 320px) / (1920 - 320));
+  color: #000;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+}
+
+.package-box .pck-head .pck-price .dollar {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-size: calc(24px + (45 - 24) * (100vw - 320px) / (1920 - 320));
+}
+
+.package-box .pck-head .pck-price .price {
+  font-size: 26px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+span.pNote {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5d6977;
+}
+
+.package-box .btn.btn-primary {
+  padding: 20px;
+  background: transparent;
+}
+
+.package-box .btn.btn-primary:hover {
+  background: #e8363c;
+  border: 1px solid #e8363c;
+}
+
+.package-box .pck-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.package-box .pck-topContent {
+  padding: 30px 0;
+}
+
+.package-box ul li {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  border-bottom: 1px solid #555656;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.package-box ul li .ic-tik {
+  color: #e8363c;
+  font-size: 18px;
+  padding-right: 12px;
+}
+
+.package-box .pck-foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 10px;
+  background-color: #e8363c;
+  border-radius: 0 0 12px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.package-box .pck-foot .btn-primary {
+  border-radius: 7px;
+  font-size: calc(15px + (17 - 15) * (100vw - 320px) / (1920 - 320));
+  font-weight: 700;
+}
+
+.btn.btn-primary {
+  background-color: #e8363c;
+  border-color: #e8363c;
+  color: #fff;
+  padding: 16px 50px;
+  text-transform: uppercase;
+}
+.btn.btn-primary:not(:disabled):not(.disabled).active,
+.btn.btn-primary:not(:disabled):not(.disabled):active,
+.btn.btn-primary:hover,
+.btn.btn-primary.focus,
+.btn.btn-primary:focus {
+  background-color: darkred;
+  border-color: darkred;
+  color: #fff;
+}
+
+.package-box .ribbon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-block;
+  background-color: #e8363c;
+  position: absolute;
+  top: 50px;
+  right: -26px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  color: var(--heading);
+  padding: 0 10px;
+  line-height: 30px;
+  font-weight: 400;
+  z-index: 12;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.view-more li {
+  display: none;
+}
+
+.view-more .hide-list {
+  display: list-item;
+  cursor: pointer;
+}
+
+p.package-disclaimer {
+  padding: 80px 0;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.package-1 {
+  background-color: #ffffff;
+  border: 2px solid #e8363c;
+}
+
+.package-1 .pck-head h4 {
+  color: #e8363c;
+}
+.package-1 .pck-head .pck-price h5 {
+  color: #e8363c;
+}
+
+.package-1 .btn.btn-primary {
+  background-color: #e8363c;
+  border-color: #e8363c;
+  color: #fff;
+}
+
+.package-2 {
+  background-color: #f2f5f8;
+  border: 2px solid #e8363c;
+}
+
+.package-2 .pck-head h4 {
+  color: #e8363c;
+}
+
+.package-2 .pck-head .pck-price h5 {
+  color: #e8363c;
+}
+
+.package-2 .btn.btn-primary {
+  background-color: #e8363c;
+  border-color: #e8363c;
+  color: #fff;
+}
+
+.package-3 {
+  background-color: #ebf8ff;
+  border: 2px solid #e8363c;
+}
+
+.package-3 .pck-head h4 {
+  color: #e8363c;
+}
+
+.package-3 .pck-head .pck-price h5 {
+  color: #e8363c;
+}
+
+.package-3 .btn.btn-primary {
+  background-color: #e8363c;
+  border-color: #e8363c;
+  color: #fff;
+}
+
+.package-4 {
+  /* background-color: #dae3ec; */
+  border: 2px solid #596673;
+}
+
+.package-4 .pck-head h4 {
+  color: #596673;
+}
+
+.package-4 .pck-head .pck-price h5 {
+  color: #596673;
+}
+
+.package-4 .btn.btn-primary {
+  background-color: #596673;
+  border-color: #596673;
+  color: #fff;
+}
+
+/* Packages Section CSS End */
+
+/* CTA Section CSS Start */
+.cta-section {
+  background: url(../images/cta-bg.webp);
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.cta-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000061;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cta-section p {
+  font-size: calc(15px + (20 - 15) * (100vw - 320px) / (1920 - 320));
+  color: #fff;
+  position: relative;
+}
+
+.cta-section h3 {
+  color: #fff;
+  font-size: calc(20px + (50 - 20) * (100vw - 320px) / (1920 - 320));
+  font-weight: 400;
+  position: relative;
+}
+
+.cta-section .bottom-links a {
+  color: #fff;
+  margin: 0 10px;
+  position: relative;
+}
+
+.cta-section .bottom-links a i {
+  margin-right: 10px;
+}
+
+.cta-section .btn.btn-primary {
+  margin-top: 20px;
+  position: relative;
+}
+/* CTA Section CSS End */
+
+/* Reviews Section CSS Start */
+.reviews {
+  padding: 120px 0;
+  position: relative;
+  background: url(../images/reviews-banner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+
+.reviews .quote-icon {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  opacity: 0.1;
+}
+
+.reviews .top-headings {
+  color: #e8363c;
+}
+
+#reviews-carousel {
+  margin-top: 50px;
+}
+
+/* #reviews-carousel .slider-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+} */
+
+#reviews-carousel img {
+  width: unset;
+}
+
+#reviews-carousel .slider-wrap .slider-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 75%;
+}
+
+#reviews-carousel .slider-wrap .slider-content p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 3.5rem;
+}
+
+#reviews-carousel .slider-wrap .slider-content h6 {
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  color: #e8363c;
+  margin-top: 30px;
+}
+
+#reviews-carousel .slider-wrap .slider-content h5 {
+  color: #fff;
+  font-weight: 300;
+}
+
+#reviews-carousel .owl-dots {
+  margin-top: 0; /* Remove margin for centering */
+  position: absolute;
+  top: 50%; /* Vertically center */
+  right: 0; /* Align to the right */
+  transform: rotate(90deg); /* Rotate 90 degrees */
+  transform-origin: right center; /* Rotate around the right center */
+  /* Add any additional styling like spacing or dot colors here */
+}
+
+#reviews-carousel button span {
+  background: none;
+  border: none;
+  text-indent: 9999px;
+  border-radius: 0%;
+  background-color: #fff;
+  margin: 0 6px;
+  opacity: 1;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+}
+
+#reviews-carousel button.active span {
+  background-color: #e8363c;
+  opacity: 1;
+  outline: none;
+}
+/* Reviews Section CSS End */
+
+/* Counter Section CSS Start */
+.counter {
+  background: #2b2b2b;
+  padding: 120px 0;
+}
+
+.counter .container {
+  padding: 60px;
+  border: 0;
+  background: #000000;
+  border-radius: 10px;
+}
+
+.counter .container .row .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter .container .row .box h4 {
+  color: #e8363c !important;
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.counter .container .row .box p {
+  color: #fff !important;
+}
+
+.counter .plus-sign:after {
+  content: "+";
+}
+
+.counter .m-sign:after {
+  content: "M";
+}
+/* Counter Section CSS End */
+
+/* Footer CSS Start */
+footer {
+  background: #000000;
+}
+
+.footer-content {
+  padding: 80px 0;
+}
+
+.logo-widget p {
+  font-size: calc(12px + (13 - 12) * (100vw - 320px) / (1920 - 320));
+  color: #fff;
+  margin: 25px 0 0 0;
+  line-height: 2rem;
+}
+
+.link-widget h5 {
+  font-size: calc(16px + (23 - 16) * (100vw - 320px) / (1920 - 320));
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 20px;
+  padding-top: 0;
+}
+
+.link-widget ul li {
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+
+.link-widget ul li a {
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.link-widget ul i {
+  font-size: 14px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.sec-copyright {
+  background-color: transparent;
+}
+
+.sec-copyright .container {
+  padding: 14px 0;
+  border-top: 1px solid #fff;
+}
+
+.sec-copyright .content p {
+  text-align: center;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 12px;
+}
+/* Footer CSS End */
+
+/* Trademark Registration Page CSS Start */
+.tr-about-2 {
+  padding: 120px 0;
+  background: #f2f5f866;
+}
+
+.tr-about-3 {
+  padding: 100px 0;
+  background: #e1e9f069;
+}
+
+.tr-about-3 .top-heading {
+  margin-bottom: 50px;
+}
+
+.about-3-ul li {
+  margin: 10px 0;
+}
+
+.about-3-ul li i {
+  margin-right: 10px;
+  color: #e8363c;
+}
+/* Trademark Registration Page CSS End */
+
+/* Copyright Registration Page CSS Start */
+.cr-about .about-3-ul {
+  columns: 2;
+  margin-top: 20px;
+}
+.cr-about .about-3-ul li {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Copyright Registration Page CSS End */
+
+/* Company Formation CSS Start */
+/* .cf-packages {
+  padding-bottom: 0;
+} */
+
+.cf-about .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #e8363c;
+}
+
+.cf-about .tab-content .top-headings-left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.cf-about .nav-link {
+  color: #fff;
+  background: #e1e9f0;
+  color: #000;
+  padding: 18px;
+}
+
+.cf-about .nav-pills {
+  gap: 10px;
+}
+
+.cf-about .top-headings h3 {
+  font-size: 26px;
+}
+/* Company Formation CSS End */
+
+/* Trademark Search CSS Start */
+.ts-about-1 {
+  padding: 100px 0 !important;
+}
+
+.ts-about-2 {
+  background: #e1e9f069;
+}
+/* Trademark Search CSS End */
+
+/* Amazon Brand Registry CSS Start */
+.amr-about-2 {
+  padding: 100px 0;
+  background: #f2f5f866;
+}
+
+.amazon-benefits {
+  padding: 100px 0;
+  background: #e1e9f0;
+}
+
+.amazon-benefits .service-box2 {
+  position: relative;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.amazon-benefits .service-box2 .icon-box {
+  display: flex;
+  max-width: 100px;
+  flex: 0 0 100px;
+}
+
+.amazon-benefits .service-box2 .ser-img1 {
+  background-image: url(../images/services-icon1.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+}
+
+.amazon-benefits .service-box2 .ser-img2 {
+  background-image: url(../images/services-icon2.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+}
+
+.amazon-benefits .service-box2 .ser-img3 {
+  background-image: url(../images/services-icon3.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+}
+
+.amazon-benefits .service-box2 .ser-img4 {
+  background-image: url(../images/services-icon4.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+}
+
+.amazon-benefits .service-box2 .ser-img5 {
+  background-image: url(../images/services-icon5.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+}
+
+.amazon-benefits .service-box2 .ser-img6 {
+  background-image: url(../images/services-icon6.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+}
+
+.amazon-benefits .service-box2 h6 {
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.amazon-benefits .service-box2 p {
+  color: #000;
+  line-height: 1.8;
+  font-size: calc(12px + (15 - 12) * (100vw - 320px) / (1920 - 320));
+}
+
+/* .amr-about-4 {
+  padding-top: 0;
+} */
+/* Amazon Brand Registry CSS End */
+
+/* FAQS Page CSS Start */
+.banner.quick-pages-banner {
+  height: 60vh;
+}
+
+.quick-pages-banner h1 {
+  text-align: center;
+}
+
+.accordion-sec {
+  padding: 100px 0;
+  background: #2b2b2b;
+}
+
+.inner-heading {
+  padding-bottom: 30px;
+  color: #e8363c;
+}
+
+.accordion-sec .accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-sec .accordion-item {
+  border: 0;
+}
+
+.accordion-sec .accordion-button {
+  padding: 20px;
+}
+
+.accordion-sec .accordion-button {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.accordion {
+  --bs-accordion-color: #ffffff;
+  --bs-accordion-bg: #000000;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #e8363c;
+}
+
+.accordion-button {
+  color: #ffffff;
+}
+/* FAQS Page CSS End */
+
+/* Privacy and Terms CSS Start */
+.privacy-terms {
+  padding: 100px 0;
+  background: #2b2b2b;
+}
+
+.privacy-terms .content {
+  border-bottom: 2px solid #e8363c;
+}
+
+.privacy-terms .content * {
+  color: #fff;
+}
+
+.privacy-terms .content .sub-heading {
+  padding: 20px 0;
+}
+
+.privacy-terms .content a {
+  color: #e8363c;
+}
+
+.privacy-terms .content .sub-heading {
+  font-size: 26px;
+}
+
+.privacy-terms .content strong {
+  font-weight: 600;
+}
+/* Privacy and Terms CSS End */
+
+/* Contact Us Page CSS Start */
+
+.contact-sec {
+  background: #2b2b2b;
+}
+
+.contact-sec .top-headings-left {
+  padding: 20px 7px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-sec .bottom-links a {
+  margin-right: 10px;
+  color: #e8363c;
+  font-size: 16px;
+}
+
+.contact-sec .bottom-links a i {
+  margin-right: 10px;
+}
+
+#contactForm .form-control {
+  height: 50px;
+  font-size: 13px;
+}
+
+#contactForm .form-control.textarea {
+  height: unset;
+  font-size: 13px;
+  resize: none;
+}
+
+#contactForm .btn.btn-primary {
+  background-color: #e8363c;
+  border-color: #e8363c;
+  color: #fff;
+  padding: 12px 40px;
+}
+
+#contactForm .btn.btn-primary:hover {
+  background-color: darkred;
+  border-color: darkred;
+}
+
+#contactForm label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Contact Us Page CSS End */
+
+/* About Page CSS Start */
+.gallery {
+  padding: 100px 0;
+  background: #d8e1eb54;
+}
+
+.aboutpage-1 {
+  background: #000000;
+}
+
+.aboutpage-1 .top-headings-left {
+  padding-right: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 20px;
+}
+
+.aboutpage-1 .about-img {
+  position: relative;
+}
+
+.aboutpage-1 .about-img img {
+  float: right;
+}
+
+.aboutpage-1 .about-img .about-small-img {
+  position: absolute;
+  top: 225px;
+  left: 80px;
+  background: #e8363c;
+  padding: 10px;
+  border: 10px solid #000;
+  border-radius: 10px;
+}
+
+/* About Page CSS End */
+
+/* Popup Form CSS Start */
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    --bs-modal-width: 1000px;
+  }
+}
+
+.popup-left-col {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.popup-right-col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+#staticBackdrop {
+  z-index: 999999999;
+}
+
+#staticBackdrop .modal-body {
+  padding: 40px 30px;
+  background: #f2f5f866;
+  border-radius: 5px;
+}
+
+#staticBackdrop ul {
+  margin-bottom: 25px;
+}
+
+#staticBackdrop .submit-ul {
+  margin-bottom: 0;
+}
+
+#staticBackdrop .modal-content {
+  position: relative;
+  border-radius: 5px;
+  border: 0;
+}
+
+#staticBackdrop .modal-content p {
+  font-size: 14px;
+}
+
+#staticBackdrop h2,
+#staticBackdrop h2 {
+  font-size: 26px;
+  color: #000;
+  font-weight: 600;
+  padding-left: 0;
+  margin-bottom: 12px;
+  line-height: 27px;
+  margin-top: 12px;
+}
+
+#staticBackdrop h2 span,
+#staticBackdrop h2 span {
+  color: red;
+  display: block;
+}
+
+#staticBackdrop b.pp_pr {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#staticBackdrop h2 + p,
+.popup-content h2 + p {
+  line-height: 20px;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+#staticBackdrop ul li input[type="text"],
+#staticBackdrop ul li input[type="email"],
+#staticBackdrop ul li input[type="tel"],
+#staticBackdrop ul li textarea {
+  background: #fff;
+  background: #ededed;
+  border: #d7d7d7 1px solid;
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #000;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+#staticBackdrop ul li textarea {
+  height: 155px;
+  resize: none;
+}
+
+#staticBackdrop input[type="submit"] {
+  border: none;
+  box-shadow: none;
+  padding: 13px 28px;
+  margin-top: 0;
+  border-radius: 5px;
+  margin-bottom: 0;
+  outline: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 100%;
+  margin: 0 auto !important;
+  height: auto;
+  color: #fff;
+  font-weight: 500;
+  background: #e8363c;
+}
+
+#staticBackdrop input[type="submit"]:hover {
+  background: darkred;
+}
+
+#staticBackdrop .btn-close {
+  border-radius: 0;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: #000 0 0 10px;
+  position: absolute;
+  right: -14px;
+  top: -13px;
+  overflow: visible;
+  width: 35px;
+  height: 35px;
+  background: #e8363c;
+  z-index: 200;
+  color: white;
+  opacity: 1;
+}
+/* Popup Form CSS End */
+
+/* Owl Carousel CSS */
+.owl-carousel {
+  display: block !important;
+}
+
+/* Intl CSS */
+.hide {
+  display: none !important;
+}
+
+.iti {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.iti .iti__selected-dial-code {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.iti__country {
+  font-size: 12px;
+}
+
+/* Form Error CSS */
+#bannerForm .error {
+  color: #d6333a;
+  font-weight: 500 !important;
+  text-align: left;
+  width: 100%;
+  font-size: 12px;
+}
+
+#bannerForm #error-msg {
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  font-weight: 500;
+  color: #d6333a;
+  font-weight: 500 !important;
+}
+
+#popupForm .error {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  color: #d6333a;
+  font-weight: 500 !important;
+}
+
+#popupForm #error-msg-popup {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+  color: #d6333a;
+  font-weight: 500 !important;
+}
+
+#contactForm .error {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  color: #d6333a;
+  font-weight: 500 !important;
+}
+
+#contactForm #error-msg-contact {
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+  color: #d6333a;
+  font-weight: 500 !important;
+}
+
+#contactForm .iti__search-input {
+  font-size: 14px;
+}
+
+#contactForm .iti .iti__selected-dial-code {
+  font-size: 13px;
+}
+
+/* Checkout Page CSS */
+section.checkout {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.checkout .content {
+  padding-bottom: 30px;
+}
+
+section.checkout .theme-btn {
+  padding: 20px 50px;
+  border: 0;
+  background: #e8363c;
+  color: #fff;
+  border-radius: 5px;
+}
+
+section.checkout .theme-btn:hover {
+  background: darkred;
+}
+
+section.checkout p {
+  width: 50%;
+  margin: 20px auto;
+  font-size: 14px;
+}
+
+section.checkout img {
+  width: 400px;
+  padding: 20px 0;
+}
+
+section.checkout .content {
+  padding-bottom: 20px;
+}
+
+section.checkout .theme-btn {
+  padding: 12px 30px;
+  border: 0;
+  background: #e8363c;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Desktop Responsive CSS  */
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1320px;
+  }
+}
+
+/* Inner Pages CSS */
+.banner.inner-banner {
+  position: relative;
+  height: 60vh;
+  background: #000;
+  background: linear-gradient(to top, #e8363c 0%, #000000 100%);
+}
+
+.banner.inner-banner .banner-content h2 {
+  font-size: 52px;
+  margin: 0 0 10px 0;
+  color: #fff;
+  font-weight: bold;
+}

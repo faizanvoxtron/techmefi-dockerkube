@@ -1,0 +1,639 @@
+body {
+  background-color: #000;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 100px 0;
+}
+
+.brief-form {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.red-background {
+  background-color: #e8363c;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.multistep-form #step-1 {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.multistep-form #step-1 .row {
+  margin-bottom: 2rem;
+}
+
+.multistep-form #step-1 .row .col-lg-12 {
+  margin-bottom: 2rem;
+}
+
+.multistep-form #step-2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.form-control {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #e8363c;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn-red {
+  background-color: #e8363c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  width: 100%;
+  color: #fff;
+}
+
+.btn-red:hover {
+  background-color: darkred;
+}
+
+.radio-box {
+  flex: 1;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-box input[type="radio"] {
+  display: none; /* Hide the default radio button */
+}
+
+.radio-box label {
+  display: block;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.radio-box label i {
+  color: #e8363c;
+  font-size: 30px;
+}
+
+.radio-box img {
+  width: 50px; /* Adjust icon size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 5px; /* Space between icon and text */
+}
+
+.radio-box:hover {
+  border-color: #e8363c; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly change background on hover */
+}
+
+.radio-box input[type="radio"]:checked + label {
+  color: #e8363c; /* Change text color when checked */
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between; /* Ensure even spacing between buttons */
+}
+
+/* Centering styles */
+.text-center {
+  text-align: center;
+}
+
+/* Additional button styling */
+.btn-red {
+  background-color: #e8363c; /* Set the button color */
+  color: white; /* Set button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add some border radius */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+  width: 300px;
+  height: 60px;
+}
+
+.btn-red:hover {
+  background-color: darkred; /* Darker color on hover */
+}
+
+/* Range Slider Styles */
+input[type="range"] {
+  width: 60%;
+  /* height: 10px; */
+  border-radius: 5px;
+  background: #e8363c;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+/* Centering the range display */
+#loanAmount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e8363c;
+}
+
+/* Fourth Step Styling */
+#step-4 {
+  width: 50%;
+  margin: 0 auto;
+  display: none;
+}
+
+#step-4 h2 {
+  text-align: center;
+  color: white;
+}
+
+#step-4 p {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+#step-4 label {
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Reason for Financing Select Field */
+#step-4 select {
+  width: 100%;
+  background-color: transparent; /* Keep the background transparent */
+  border: 1px solid white; /* White border */
+  color: white; /* White text */
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Styles when the select field is focused */
+#step-4 select:focus {
+  border-color: #e8363c; /* Change border color on focus */
+  background-color: transparent; /* Keep background transparent on focus */
+}
+
+/* To remove default white background of options in some browsers */
+#step-4 select option {
+  background-color: black; /* Ensure options have a black background */
+  color: white; /* White text for options */
+}
+
+/* Step 5 Radio Button Styles */
+#step-5 {
+  width: 50%; /* Set the width of the step */
+  margin: 0 auto; /* Center the step */
+}
+
+#step-5 .radio-box {
+  flex: 1;
+  border: 1px solid white; /* White border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  text-align: center; /* Center the content */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transition for hover effects */
+  margin: 0 10px; /* Margin to space boxes */
+}
+
+#step-5 .radio-box input[type="radio"] {
+  display: none; /* Hide the default radio button */
+}
+
+#step-5 .radio-box label {
+  display: block; /* Block display for label */
+  cursor: pointer; /* Pointer cursor for label */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+}
+
+#step-5 .radio-box:hover {
+  border-color: #e8363c; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly change background on hover */
+}
+
+#step-5 .radio-box input[type="radio"]:checked + label {
+  color: #e8363c; /* Change text color when checked */
+}
+
+#step-5 .radio-box input[type="radio"]:checked {
+  accent-color: #e8363c; /* Change radio button color when checked */
+}
+
+/* Step 6 CSS */
+#step-6 {
+  width: 50%; /* Set width for the step */
+  margin: 0 auto; /* Center the step */
+}
+
+#step-6 .text-center {
+  margin-bottom: 20px; /* Space below the text */
+}
+
+#step-6 .form-control {
+  background-color: transparent; /* Transparent background */
+  border: 1px solid white; /* White border */
+  color: white; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding */
+}
+
+#step-6 .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder color */
+}
+
+#step-6 .btn-red {
+  width: 300px; /* Button width */
+  height: 60px; /* Button height */
+}
+
+/* Step 7 CSS */
+#step-7 {
+  width: 50%; /* Set width for the step */
+  margin: 0 auto; /* Center the step */
+}
+
+#step-7 .text-center {
+  margin-bottom: 20px; /* Space below the text */
+}
+
+#step-7 .radio-box {
+  flex: 1; /* Equal width for all radio boxes */
+  border: 1px solid white; /* White border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding for the boxes */
+  text-align: center; /* Center the content */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer; /* Pointer cursor for hover */
+  transition: all 0.3s ease; /* Transition for hover effects */
+  margin: 0 10px; /* Margin to space boxes */
+}
+
+#step-7 .radio-box input[type="radio"] {
+  display: none; /* Hide the default radio button */
+}
+
+#step-7 .radio-box label {
+  display: block; /* Block display for label */
+  cursor: pointer; /* Pointer cursor for label */
+  color: white; /* Text color */
+  font-weight: bold; /* Bold text */
+}
+
+#step-7 .radio-box:hover {
+  border-color: #ff0000; /* Change border color on hover */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly change background on hover */
+}
+
+#step-7 .radio-box input[type="radio"]:checked + label {
+  color: #ff0000; /* Change text color when checked */
+}
+
+#step-8 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#step-8 .form-control {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%; /* Full width for input */
+  margin-top: 10px; /* Space between label and input */
+}
+
+#step-8 .form-label {
+  color: white; /* White color for label */
+  margin-bottom: 10px; /* Space below label */
+}
+
+#step-9 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#step-9 .form-control {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100%; /* Full width for input */
+  margin-top: 10px; /* Space between label and input */
+}
+
+#step-9 .form-label {
+  color: white; /* White color for label */
+  margin-bottom: 10px; /* Space below label */
+}
+
+#step-10 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#step-10 .form-control {
+  background-color: black; /* Black background for dropdowns */
+  border: 1px solid white; /* White border */
+  color: white; /* White text color */
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px; /* Fixed width for dropdowns */
+  margin-top: 10px; /* Space below label */
+}
+
+#step-10 .form-label {
+  color: white; /* White color for label */
+  margin-bottom: 10px; /* Space below label */
+}
+
+.d-flex {
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center alignment */
+  gap: 10px; /* Space between elements */
+}
+
+#step-11 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#step-11 .form-control {
+  background-color: black; /* Black background for dropdowns */
+  border: 1px solid white; /* White border */
+  color: white; /* White text color */
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 10px; /* Space below label */
+}
+
+#step-11 .form-label {
+  color: white; /* White color for label */
+  margin-bottom: 10px; /* Space below label */
+}
+
+#step-thank-you {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#step-thank-you h2 {
+  color: white; /* White color for the heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+#step-thank-you p {
+  color: white; /* White color for the message text */
+  font-size: 1.2rem; /* Adjust font size for better visibility */
+  margin-top: 20px; /* Space above message text */
+}
+
+#step-thank-you .fas {
+  font-size: 80px; /* Size for the check icon */
+  color: green; /* Green color for the icon */
+  margin-bottom: 20px; /* Space below the icon */
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 991px) {
+  body {
+    padding: 50px 0;
+    height: 100%;
+  }
+
+  .red-background {
+    font-size: 1rem;
+  }
+
+  .multistep-form #step-1 {
+    width: 100%;
+  }
+
+  .multistep-form #step-1 .row {
+    margin-bottom: 0;
+  }
+
+  .multistep-form #step-1 .row .col-12 {
+    margin-bottom: 2rem;
+  }
+
+  .multistep-form #step-2 {
+    width: 100%;
+  }
+
+  .multistep-form #step-2 .radio-box-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .multistep-form #step-2 .radio-box-container .radio-box {
+    margin: 0;
+  }
+
+  .multistep-form #step-3 input[type="range"] {
+    width: 100%;
+  }
+
+  #step-4 {
+    width: 100%;
+  }
+
+  #step-5 {
+    width: 100%;
+  }
+
+  #step-5 .radio-box {
+    margin: 0;
+  }
+
+  #step-6 {
+    width: 100%;
+  }
+
+  #step-7 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #step-7 .radio-box-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #step-7 .radio-box {
+    margin: 0;
+  }
+
+  #step-8 {
+    width: 100%;
+  }
+
+  #step-9 {
+    width: 100%;
+  }
+
+  #step-10 {
+    width: 100%;
+  }
+
+  #step-10 .select-container {
+    justify-content: space-between !important;
+  }
+
+  #step-10 .form-control {
+    width: unset;
+    padding: 15px 30px;
+  }
+
+  #step-11 {
+    width: 100%;
+  }
+
+  #step-thank-you {
+    width: 100%;
+  }
+}
+
+/* Disabled button styles */
+.btn-red:disabled {
+  background-color: #cccccc; /* Grey background for disabled state */
+  color: #666666; /* Lighter text color */
+  cursor: not-allowed; /* Disabled cursor */
+  opacity: 0.6; /* Slight transparency for visual cue */
+}
+
+/* Form Error CSS */
+#custom-lead-form .error {
+  color: #d6333a;
+  font-weight: 500 !important;
+  text-align: left;
+  width: 100%;
+  /* font-size: 12px; */
+}
+
+#custom-lead-form #error-msg {
+  text-align: left;
+  /* font-size: 12px; */
+  display: block;
+  font-weight: 500;
+  color: #d6333a;
+  font-weight: 500 !important;
+}
+
+#custom-lead-form .iti {
+  width: 100%;
+}
+
+#custom-lead-form .iti li {
+  color: black !important;
+}
+
+#custom-lead-form .iti li span {
+  color: black !important;
+}
+
+#custom-lead-form .iti__country-name {
+  color: #000;
+}
+
+.hide {
+  display: none;
+}
+
+span.iti__country-name {
+  color: black;
+}
