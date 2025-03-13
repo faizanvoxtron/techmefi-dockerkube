@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: desentjob.com
+    - host: techmefi.com
       http:
         paths:
           - path: /
@@ -18,3 +18,14 @@ spec:
                 name: techmefi-web
                 port:
                   number: 8086
+    - host: www.techmefi.com  # <-- Add this
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: techmefi-web
+                port:
+                  number: 8086
+~                                                                                                                                                                                                    ~                                   

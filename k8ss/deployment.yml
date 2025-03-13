@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: techmefi-web
+  namespace: tmefi
+  labels:
+    app: techmefi-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: techmefi-web
+  template:
+    metadata:
+      labels:
+        app: techmefi-web
+    spec:
+      containers:
+        - name: techmefi-web
+          image: voxtrondocker/techmefi:latest
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "100m"   # 0.1 core
+              memory: "256Mi"  # 256MB
+            limits:
+              cpu: "500m"   # 0.5 core
+              memory: "1Gi"  # 1GB
+          volumeMounts:
+            - name: techmefi-volume
+              mountPath: /var/www/html
+      volumes:
+        - name: techmefi-volume
+          persistentVolumeClaim:
+            claimName: techmefi-pvc
